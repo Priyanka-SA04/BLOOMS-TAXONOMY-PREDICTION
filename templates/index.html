@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloom's Taxonomy Prediction</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Bloom's Taxonomy Level Prediction</h1>
+        <h2>Upload a PDF file with questions:</h2>
+        <form action="/predict" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="file">Upload PDF:</label>
+                <input type="file" name="file" id="file" required>
+            </div>
+            <button type="submit">Predict from PDF</button>
+        </form>
+        <h2>Or enter an individual question:</h2>
+        <form action="/predict" method="post">
+            <div class="form-group">
+                <label for="question">Enter Question:</label>
+                <textarea name="question" id="question" rows="4" required></textarea>
+            </div>
+            <button type="submit">Predict from Question</button>
+        </form>
+    </div>
+</body>
+</html>
