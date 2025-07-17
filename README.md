@@ -17,13 +17,13 @@ The classifier predicts one of six cognitive levels from Bloom's revised taxonom
 # Bloom's Taxonomy Level Prediction
 
 This project is a web application that predicts the Bloom's Taxonomy level of educational questions from uploaded PDF files or individual text inputs.<br>
-<b>The main usecase of this project is that it makes  easier for teachers to automatically assign Bloom's levels to questions in papers instead of manually doing so.</b>
+<b>The main usecase of this project is that it makes it easier for teachers to automatically assign Bloom's levels to questions in question papers instead of manually doing so.</b>
 
 ## Features
 
 * Predicts Bloom's Taxonomy levels from text input or PDF uploads.
 * Utilizes a pre-trained DistilBert model.
-* This model is fine-tuned on huge dataset of questions.
+* This model is fine-tuned on a huge dataset of questions.
 
 ## Project Structure
 
